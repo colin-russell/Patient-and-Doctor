@@ -12,13 +12,18 @@
 @implementation Doctor
 
 
-- (instancetype)initWithName : (NSString*)name andAge : (int)age
+- (instancetype)initWithName : (NSString*)name
 {
     self = [super init];
     if (self) {
         _name = name;
-        _age = age;
-        
+        _patientList = [NSMutableArray new];
+        _medicalHandbook = @{ @"cancer" : @"chemotherapy",
+                              @"peanut allergy" : @"epi pen",
+                              @"asthma" : @"inhaler",
+                              @"broken bone" : @"cast",
+                              @"bad eyesight" : @"glasses"
+                              };
     }
     return self;
 }

@@ -10,8 +10,7 @@
 		3BFAEE63207FC8B00090E1E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE62207FC8B00090E1E5 /* main.m */; };
 		3BFAEE6B207FC8CA0090E1E5 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE6A207FC8CA0090E1E5 /* Doctor.m */; };
 		3BFAEE6E207FC8D70090E1E5 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE6D207FC8D70090E1E5 /* Patient.m */; };
-		3BFAEE77207FDB7A0090E1E5 /* PatientPresciptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE76207FDB7A0090E1E5 /* PatientPresciptions.m */; };
-		3BFAEE7A207FDD5B0090E1E5 /* MedicalRecords.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE79207FDD5B0090E1E5 /* MedicalRecords.m */; };
+		3BFAEE7A207FDD5B0090E1E5 /* MedicalRecordKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAEE79207FDD5B0090E1E5 /* MedicalRecordKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,10 +32,8 @@
 		3BFAEE6A207FC8CA0090E1E5 /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		3BFAEE6C207FC8D70090E1E5 /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		3BFAEE6D207FC8D70090E1E5 /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
-		3BFAEE75207FDB7A0090E1E5 /* PatientPresciptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientPresciptions.h; sourceTree = "<group>"; };
-		3BFAEE76207FDB7A0090E1E5 /* PatientPresciptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientPresciptions.m; sourceTree = "<group>"; };
-		3BFAEE78207FDD5B0090E1E5 /* MedicalRecords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicalRecords.h; sourceTree = "<group>"; };
-		3BFAEE79207FDD5B0090E1E5 /* MedicalRecords.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalRecords.m; sourceTree = "<group>"; };
+		3BFAEE78207FDD5B0090E1E5 /* MedicalRecordKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicalRecordKeeper.h; sourceTree = "<group>"; };
+		3BFAEE79207FDD5B0090E1E5 /* MedicalRecordKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedicalRecordKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +71,8 @@
 				3BFAEE6A207FC8CA0090E1E5 /* Doctor.m */,
 				3BFAEE6C207FC8D70090E1E5 /* Patient.h */,
 				3BFAEE6D207FC8D70090E1E5 /* Patient.m */,
-				3BFAEE75207FDB7A0090E1E5 /* PatientPresciptions.h */,
-				3BFAEE76207FDB7A0090E1E5 /* PatientPresciptions.m */,
-				3BFAEE78207FDD5B0090E1E5 /* MedicalRecords.h */,
-				3BFAEE79207FDD5B0090E1E5 /* MedicalRecords.m */,
+				3BFAEE78207FDD5B0090E1E5 /* MedicalRecordKeeper.h */,
+				3BFAEE79207FDD5B0090E1E5 /* MedicalRecordKeeper.m */,
 			);
 			path = "Patient and Doctor";
 			sourceTree = "<group>";
@@ -138,8 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BFAEE7A207FDD5B0090E1E5 /* MedicalRecords.m in Sources */,
-				3BFAEE77207FDB7A0090E1E5 /* PatientPresciptions.m in Sources */,
+				3BFAEE7A207FDD5B0090E1E5 /* MedicalRecordKeeper.m in Sources */,
 				3BFAEE6E207FC8D70090E1E5 /* Patient.m in Sources */,
 				3BFAEE6B207FC8CA0090E1E5 /* Doctor.m in Sources */,
 				3BFAEE63207FC8B00090E1E5 /* main.m in Sources */,

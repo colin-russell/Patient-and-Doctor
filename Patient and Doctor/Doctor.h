@@ -12,10 +12,12 @@
 
 @interface Doctor : NSObject
 
-@property (nonatomic, strong) NSMutableArray *patientList;
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic) int age;
+@property (nonatomic, strong) NSMutableArray *patientList;
+@property (nonatomic, strong) NSDictionary *medicalHandbook;
 
+- (instancetype)initWithName : (NSString*)name;
 -(void)visit : (Patient*)patient;
 -(void)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom;
 

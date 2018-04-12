@@ -22,9 +22,8 @@
     return self;
 }
 
--(void)visitDoctor : (Doctor*)doctor
-{
-    [doctor visit : self];
+-(void)visitDoctor : (Doctor*)doctor {
+    [doctor visit:self];
 }
 
 -(void)requestMedicationFrom : (Doctor*)doctor withSymptom : (NSString*)symptom

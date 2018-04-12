@@ -6,18 +6,22 @@
 //  Copyright © 2018 Colin Russell. All rights reserved.
 //
 
-#import "PatientPresciptions.h"
+#import "PresciptionsHistory.h"
 #import "Patient.h"
 
-@implementation PatientPresciptions
+@implementation PresciptionsHistory
 
-- (instancetype)initWithPatient : (Patient*)patient and 
+- (instancetype)initWithPatient : (Patient*)patient //andPrescription : (NSString*)prescription
 {
     self = [super init];
     if (self) {
-        
+        _prescriptionRecord = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+-(void)addPrescription {
+    
 }
 
 @end

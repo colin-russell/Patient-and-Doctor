@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MedicalRecords : NSObject
+
+@interface MedicalRecordKeeper : NSObject
+
+@property NSMutableDictionary *medicalRecords;
+
+- (void)addRecordByPatient : (Patient *)patient andNewRecord : (NSString *) prescription 
 
 @end

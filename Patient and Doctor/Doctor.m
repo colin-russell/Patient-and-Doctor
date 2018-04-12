@@ -11,4 +11,19 @@
 
 @implementation Doctor
 
+
+- (instancetype)initWithName : (NSString*)name andAge : (int)age
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+        
+    }
+    return self;
+}
+
+
+
+
 @end

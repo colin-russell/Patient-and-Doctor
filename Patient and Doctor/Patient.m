@@ -11,4 +11,15 @@
 
 @implementation Patient
 
+- (instancetype)initWithName : (NSString*)name age: (int)age : andHeathCard : (BOOL)hasValidHealthcard
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+        _hasValidHealthcard = hasValidHealthcard;
+    }
+    return self;
+}
+
 @end

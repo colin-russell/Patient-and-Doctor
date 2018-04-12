@@ -16,4 +16,6 @@
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic) int age;
 
+//-(void)acceptPatient : (Patient *)patient;
+
 @end

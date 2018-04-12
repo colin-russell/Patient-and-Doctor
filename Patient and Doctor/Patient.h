@@ -14,8 +14,8 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic) int age;
 @property BOOL hasValidHealthcard;
-@property (nonatomic, strong) NSMutableArray *prescriptionList;
 
-
+-(void)visitDoctor : (Doctor*)doctor;
+-(void)requestMedicationFrom : (Doctor*)doctor withSymptom : (NSString*)symptom;
 
 @end

@@ -23,6 +23,24 @@
     return self;
 }
 
+-(void)visit : (Patient*)patient
+{
+    if (patient.hasValidHealthcard == true)
+        ([self.patientList addObject:patient]);
+    else
+        NSLog(@"INVALID HEALTH CARD");
+}
+
+-(void)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom
+{
+    // check if patient is in doctor's patientList
+    if ([self.patientList containsObject:patient]){
+        
+    }
+    else
+        NSLog(@"PATIENT IS NOT ACCEPTED BY THIS DOCTOR");
+        
+}
 
 
 

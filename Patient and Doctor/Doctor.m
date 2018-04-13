@@ -8,6 +8,7 @@
 
 #import "Doctor.h"
 #import "Patient.h"
+#import "MedicalRecordKeeper.h"
 
 @implementation Doctor
 
@@ -30,20 +31,30 @@
 
 -(void)visit : (Patient*)patient
 {
-    if (patient.hasValidHealthcard == true)
+    if (patient.hasValidHealthcard == true){
         ([self.patientList addObject:patient]);
+        NSLog(@"Patient: %@ added to list", patient.name);
+    }
     else
-        NSLog(@"INVALID HEALTH CARD");
+        NSLog(@"Patient: %@ INVALID HEALTH CARD", patient.name);
 }
 
--(void)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom
+-(NSString*)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom
 {
     // check if patient is in doctor's patientList
     if ([self.patientList containsObject:patient]){
-        
+        if ([self.medicalHandbook objectForKey:symptom]){
+            return [self.medicalHandbook valueForKey:symptom];
+        }
+        else
+            NSLog(@"DOCTOR HAD NO CURE");
+            return @"DOCTOR HAD NO CURE";
     }
-    else
-        NSLog(@"PATIENT IS NOT ACCEPTED BY THIS DOCTOR");
+    else {
+        NSLog(@"PATIENT IS NOT IN THIS DOCTOR'S PATIENTLIST");
+        return nil;
+    }
+    
         
 }
 

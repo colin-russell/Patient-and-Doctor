@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Patient.h"
 
 @interface MedicalRecordKeeper : NSObject
 
 @property NSMutableDictionary *medicalRecords;
 
-- (void)addRecordByPatient : (Patient *)patient andNewRecord : (NSString *) prescription 
+- (void)addRecordByPatient : (Patient *)patient andNewRecord : (NSString *) prescription;
 
 @end

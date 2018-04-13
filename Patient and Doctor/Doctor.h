@@ -19,6 +19,6 @@
 
 - (instancetype)initWithName : (NSString*)name;
 -(void)visit : (Patient*)patient;
--(void)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom;
+-(NSString *)requestMedication : (Patient*)patient andSymptom : (NSString*)symptom;
 
 @end

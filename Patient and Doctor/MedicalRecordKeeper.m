@@ -28,12 +28,15 @@
 }
 
 - (void)addRecordByPatient : (Patient *)patient andNewRecord : (NSString *) prescription {
+    if (prescription != nil) {
     if ([self isInMedicalRecords:patient]){ // if the patient is already in the medicalRecords
         [self.medicalRecords[patient.name] addObject:prescription]; // add record to already existing array
     }
     else // if the patient isn't already in the medicalRecords
         [self.medicalRecords setObject: [NSMutableArray arrayWithObject:prescription] forKey:patient.name];
-         
+    }
+    else
+        NSLog(@"No record to add");
 }
 
 @end

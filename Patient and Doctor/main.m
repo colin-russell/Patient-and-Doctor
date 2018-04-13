@@ -17,7 +17,15 @@ int main(int argc, const char * argv[]) {
         
         
         Doctor *doctor1 = [[Doctor alloc] initWithName:@"Dr. Brooks"];
-        Patient *patient1 = [[Patient alloc] initWithName:@"Frank" age:66 andHeathCard:true];
+        Patient *patient1 = [[Patient alloc] initWithName:@"Frank" age:66 andHeathCard:YES];
+        
+        [patient1 visitDoctor:doctor1];
+        
+        NSString *patient1Record = [patient1 requestMedicationFrom:doctor1 withSymptom:@"cancer"];
+        
+        if (patient1Record != nil)
+            [recordKeeper addRecordByPatient:patient1 andNewRecord:patient1Record];
+        
         
         
     }

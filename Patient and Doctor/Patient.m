@@ -11,7 +11,7 @@
 
 @implementation Patient
 
-- (instancetype)initWithName : (NSString*)name age: (int)age : andHeathCard : (BOOL)hasValidHealthcard
+- (instancetype)initWithName : (NSString*)name age: (int)age andHeathCard : (BOOL)hasValidHealthcard
 {
     self = [super init];
     if (self) {
@@ -26,9 +26,9 @@
     [doctor visit:self];
 }
 
--(void)requestMedicationFrom : (Doctor*)doctor withSymptom : (NSString*)symptom
+-(NSString *)requestMedicationFrom : (Doctor*)doctor withSymptom : (NSString*)symptom
 {
-    [doctor requestMedication:self andSymptom:symptom];
+    return [doctor requestMedication:self andSymptom:symptom];
 }
 
 @end
